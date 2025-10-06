@@ -12,7 +12,28 @@
 // Зі списку видно, що доставка можлива не скрізь. Якщо зазначена країна відсутня у списку, то функція повинна повернути рядок "Sorry, there is no delivery to your country". Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
 {
-  function getShippingCost(country) {}
+  function getShippingCost(country) {
+    let price;
+
+    switch (country) {
+      case 'China':
+        price = 250;
+        break;
+      case 'Chile':
+        price = 100;
+        break;
+      case 'Australia':
+        price = 170;
+        break;
+      case 'Jamaica':
+        price = 120;
+        break;
+      default:
+        return 'Sorry, there is no delivery to your country';
+    }
+
+    return `Shipping to ${country} will cost ${price} credits`;
+  }
 }
 
 console.log(getShippingCost('Australia')); // "Shipping to Australia will cost 170 credits"
