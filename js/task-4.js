@@ -13,7 +13,7 @@
 
 {
   function getShippingCost(country) {
-    let price;
+    let price; // потрбіно ообовязково оголосити змінну (помилка)
 
     switch (country) {
       case 'China':
@@ -29,10 +29,10 @@
         price = 120;
         break;
       default:
-        return 'Sorry, there is no delivery to your country';
+        return 'Sorry, there is no delivery to your country'; // стандартні випадки
     }
 
-    return `Shipping to ${country} will cost ${price} credits`;
+    return `Shipping to ${country} will cost ${price} credits`; // повертаю результат
   }
 }
 
