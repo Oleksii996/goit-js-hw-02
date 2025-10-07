@@ -17,10 +17,10 @@
 
     switch (country) {
       case 'China':
-        price = 250;
+        price = 100;
         break;
       case 'Chile':
-        price = 100;
+        price = 250;
         break;
       case 'Australia':
         price = 170;
